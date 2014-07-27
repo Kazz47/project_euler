@@ -43,6 +43,14 @@ class Problem3Tests(unittest.TestCase):
 
         self.assertEqual(actualResult, expectedResult)
 
+    def test_isPrime_29_true(self):
+        val = 1234346143
+        expectedResult = True
+
+        actualResult = Problem3.isPrime(val)
+
+        self.assertEqual(actualResult, expectedResult)
+
     def test_factor_1_empty(self):
         val = 1
         expectedResult = []

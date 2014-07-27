@@ -1,7 +1,5 @@
 import math
 
-print("[Begin]")
-
 def isPrime(val):
     for x in range(int(math.sqrt(val)), 1, -1):
         if (val % x == 0):
@@ -19,11 +17,11 @@ def factor(val):
     while (math.sqrt(m) < val):
         if (val % m == 0):
             val = val // m
-            if (m not in factors):
-                factors.append(m)
+            factors.append(m)
         else:
             m += 1
     return factors
 
 if __name__ == '__main__':
+    print("[Begin]")
     print("Largest Prime Factor:", lpf(600851475143))
