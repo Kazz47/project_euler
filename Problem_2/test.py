@@ -8,16 +8,16 @@ class Problem2Tests(unittest.TestCase):
         expectedValue = 10
         
         actualValue = Problem2.fibonacciSum(2, maxVal)
-        
+
         self.assertEqual(actualValue % 2, 0)
         self.assertEqual(actualValue, expectedValue)
-        
+
     def test_fibonacci_4000000_10(self):
         maxVal = 4000000
         expectedValue = 4613732
-        
+
         actualValue = Problem2.fibonacciSum(2, maxVal)
-        
+
         self.assertEqual(actualValue % 2, 0)
         self.assertEqual(expectedValue, actualValue)
 

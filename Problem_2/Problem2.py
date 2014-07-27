@@ -1,4 +1,4 @@
-print "[Begin]"
+print("[Begin]")
 
 def fibonacciSum(mod, maxVal):
     total = 0
@@ -13,4 +13,4 @@ def fibonacciSum(mod, maxVal):
     return total
 
 if __name__ == '__main__':
-    print "Total", fibonacciSum(2, 4000000)
+    print("Total", fibonacciSum(2, 4000000))

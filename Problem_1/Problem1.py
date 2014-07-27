@@ -1,4 +1,4 @@
-print "[Begin]"
+print("[Begin]")
 
 def sumOfMultiples(maxVal):
     total = 0
@@ -8,4 +8,4 @@ def sumOfMultiples(maxVal):
     return total
 
 if __name__ == '__main__':
-    print "Total", sumOfMultiples(1000)
+    print("Total", sumOfMultiples(1000))
