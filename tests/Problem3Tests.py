@@ -1,11 +1,11 @@
+from problems import Problem3
 import unittest
-import Problem3
 
 class Problem3Tests(unittest.TestCase):
 
     def test_isPrime_1_true(self):
         val = 1
-        expectedResult = True
+        expectedResult = False
 
         actualResult = Problem3.isPrime(val)
 

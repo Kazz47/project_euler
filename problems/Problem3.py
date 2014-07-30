@@ -1,6 +1,8 @@
 import math
 
 def isPrime(val):
+    if (val == 1):
+        return False
     for x in range(int(math.sqrt(val)), 1, -1):
         if (val % x == 0):
             return False
