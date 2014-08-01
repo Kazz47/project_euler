@@ -1,7 +1,7 @@
 from problems import Problem7
 import unittest
 
-class Problem7Tests(unittest.TestCase):
+class test_problem7(unittest.TestCase):
 
     def test_findPrime_6_13(self):
         primeIndex = 6

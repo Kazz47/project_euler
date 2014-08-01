@@ -1,7 +1,7 @@
+from problems import Problem4
 import unittest
-import Problem4
 
-class Problem4Tests(unittest.TestCase):
+class test_problem4(unittest.TestCase):
 
     def test_isPalendrome_0_true(self):
         val = 0

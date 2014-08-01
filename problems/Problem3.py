@@ -10,7 +10,7 @@ def isPrime(val):
 
 def lpf(val):
     total = 0
-    factors = factor(val)
+    factors = sorted(list(set(factor(val))))
     return factors[-1]
 
 def factor(val):

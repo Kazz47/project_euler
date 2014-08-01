@@ -1,7 +1,7 @@
 from problems import Problem8
 import unittest
 
-class Problem8Tests(unittest.TestCase):
+class test_problem8(unittest.TestCase):
     
     def setUp(self):
         self.sequence = (

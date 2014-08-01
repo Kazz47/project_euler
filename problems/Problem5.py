@@ -7,7 +7,6 @@ def equalList(values):
     return True
 
 def smallestMultipleBrutefoce(values):
-    print(values)
     originalList = list(values)
     multipliers = [1] * len(values)
 
@@ -36,8 +35,6 @@ def smallestMultipleFactors(values):
                 oldCount = factorCount[index]
                 if (newCount > oldCount):
                     factorCount[index] = newCount
-    print(factorList)
-    print(factorCount)
     
     result = 1
     for i in range(0, len(factorList)):

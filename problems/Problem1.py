@@ -1,5 +1,3 @@
-print("[Begin]")
-
 def sumOfMultiples(maxVal):
     total = 0
     for x in range(0, maxVal):
@@ -8,4 +6,5 @@ def sumOfMultiples(maxVal):
     return total
 
 if __name__ == '__main__':
+    print("[Begin]")
     print("Total", sumOfMultiples(1000))

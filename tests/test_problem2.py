@@ -1,7 +1,7 @@
+from problems import Problem2
 import unittest
-import Problem2
 
-class Problem2Tests(unittest.TestCase):
+class test_problem2(unittest.TestCase):
     
     def test_fibonacci_10_10(self):
         maxVal = 10

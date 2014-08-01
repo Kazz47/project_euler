@@ -1,7 +1,7 @@
 from problems import Problem3
 import unittest
 
-class Problem3Tests(unittest.TestCase):
+class test_problem3(unittest.TestCase):
 
     def test_isPrime_1_true(self):
         val = 1
@@ -78,7 +78,7 @@ class Problem3Tests(unittest.TestCase):
 
     def test_factor_4_2(self):
         val = 4
-        expectedResult = [2]
+        expectedResult = [2, 2]
 
         actualResult = Problem3.factor(val)
 
@@ -86,7 +86,7 @@ class Problem3Tests(unittest.TestCase):
 
     def test_factor_16_2(self):
         val = 16
-        expectedResult = [2]
+        expectedResult = [2, 2, 2, 2]
 
         actualResult = Problem3.factor(val)
 

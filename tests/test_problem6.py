@@ -1,7 +1,7 @@
 from problems import Problem6
 import unittest
 
-class Problem6Tests(unittest.TestCase):
+class test_problem6(unittest.TestCase):
 
     def test_sumOfSquares_10_385(self):
         values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

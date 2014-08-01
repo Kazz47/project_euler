@@ -1,7 +1,7 @@
+from problems import Problem5
 import unittest
-import Problem5
 
-class Problem5Tests(unittest.TestCase):
+class test_problem5(unittest.TestCase):
 
     def test_smallestMultiple(self):
         values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -14,7 +14,7 @@ class Problem5Tests(unittest.TestCase):
         self.assertEqual(actualResult, expectedResult)
 
     def test_smallestMultiple(self):
-        values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 20]
+        values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
         expectedResult = 232792560
 
         actualResult = Problem5.smallestMultipleFactors(values)

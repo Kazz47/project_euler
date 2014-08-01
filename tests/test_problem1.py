@@ -1,7 +1,7 @@
+from problems import Problem1
 import unittest
-import Problem1
 
-class Problem1Tests(unittest.TestCase):
+class test_problem1(unittest.TestCase):
     
     def test_sumOfMultiples_10_24(self):
         maxVal = 10
