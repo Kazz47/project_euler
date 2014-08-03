@@ -15,8 +15,8 @@ def productOfTripletWithSum(tripletSum):
         for y in range(x, remainingVal): # Ends at tripletSum - 1
             b = y
             c = remainingVal - y
-            print(a, b, c, "=", a + b + c)
             if (isTriplet(a, b, c)):
+                # print(a, b, c, "=", a + b + c)
                 return a * b * c
     
     return None

@@ -5,7 +5,7 @@ class test_problem9(unittest.TestCase):
     
     def test_productOfTripletWithSum_3_1(self):
         tripletSum = 3
-        expectedResult = 1
+        expectedResult = None
 
         actualResult = Problem9.productOfTripletWithSum(tripletSum)
 
