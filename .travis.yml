@@ -1,3 +1,10 @@
 language: python
+
+os:
+ - linux
+ - osx
+
 python:
  - "3.2"
+
+script: python -m unittest discover
