@@ -1,13 +1,13 @@
-from problems import Problem2
+from problems import Problem002
 import unittest
 
-class test_problem2(unittest.TestCase):
-    
+class test_problem002(unittest.TestCase):
+
     def test_fibonacci_10_10(self):
         maxVal = 10
         expectedValue = 10
-        
-        actualValue = Problem2.fibonacciSum(2, maxVal)
+
+        actualValue = Problem002.fibonacciSum(2, maxVal)
 
         self.assertEqual(actualValue % 2, 0)
         self.assertEqual(actualValue, expectedValue)
@@ -16,10 +16,11 @@ class test_problem2(unittest.TestCase):
         maxVal = 4000000
         expectedValue = 4613732
 
-        actualValue = Problem2.fibonacciSum(2, maxVal)
+        actualValue = Problem002.fibonacciSum(2, maxVal)
 
         self.assertEqual(actualValue % 2, 0)
         self.assertEqual(expectedValue, actualValue)
 
 if __name__ == '__main__':
     unittest.main()
+

@@ -1,13 +1,13 @@
-from problems import Problem3
+from problems import Problem003
 import unittest
 
-class test_problem3(unittest.TestCase):
+class test_problem003(unittest.TestCase):
 
     def test_isPrime_1_true(self):
         val = 1
         expectedResult = False
 
-        actualResult = Problem3.isPrime(val)
+        actualResult = Problem003.isPrime(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -15,7 +15,7 @@ class test_problem3(unittest.TestCase):
         val = 2
         expectedResult = True
 
-        actualResult = Problem3.isPrime(val)
+        actualResult = Problem003.isPrime(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -23,23 +23,23 @@ class test_problem3(unittest.TestCase):
         val = 3
         expectedResult = True
 
-        actualResult = Problem3.isPrime(val)
-        
+        actualResult = Problem003.isPrime(val)
+
         self.assertEqual(actualResult, expectedResult)
 
     def test_isPrime_4_false(self):
         val = 4
         expectedResult = False
 
-        actualResult = Problem3.isPrime(val)
+        actualResult = Problem003.isPrime(val)
 
         self.assertEqual(actualResult, expectedResult)
-    
+
     def test_isPrime_29_true(self):
         val = 29
         expectedResult = True
 
-        actualResult = Problem3.isPrime(val)
+        actualResult = Problem003.isPrime(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -47,7 +47,7 @@ class test_problem3(unittest.TestCase):
         val = 1234346143
         expectedResult = True
 
-        actualResult = Problem3.isPrime(val)
+        actualResult = Problem003.isPrime(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -56,7 +56,7 @@ class test_problem3(unittest.TestCase):
         expectedResult = []
 
 
-        actualResult = Problem3.factor(val)
+        actualResult = Problem003.factor(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -64,7 +64,7 @@ class test_problem3(unittest.TestCase):
         val = 2
         expectedResult = [2]
 
-        actualResult = Problem3.factor(val)
+        actualResult = Problem003.factor(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -72,7 +72,7 @@ class test_problem3(unittest.TestCase):
         val = 3
         expectedResult = [3]
 
-        actualResult = Problem3.factor(val)
+        actualResult = Problem003.factor(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -80,7 +80,7 @@ class test_problem3(unittest.TestCase):
         val = 4
         expectedResult = [2, 2]
 
-        actualResult = Problem3.factor(val)
+        actualResult = Problem003.factor(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -88,7 +88,7 @@ class test_problem3(unittest.TestCase):
         val = 16
         expectedResult = [2, 2, 2, 2]
 
-        actualResult = Problem3.factor(val)
+        actualResult = Problem003.factor(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -96,7 +96,7 @@ class test_problem3(unittest.TestCase):
         val = 10
         expectedResult = 5
 
-        actualResult = Problem3.lpf(val)
+        actualResult = Problem003.lpf(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -104,7 +104,7 @@ class test_problem3(unittest.TestCase):
         val = 13195
         expectedResult = 29
 
-        actualResult = Problem3.lpf(val)
+        actualResult = Problem003.lpf(val)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -112,10 +112,10 @@ class test_problem3(unittest.TestCase):
         val = 600851475143
         expectedResult = 6857
 
-        actualResult = Problem3.lpf(val)
+        actualResult = Problem003.lpf(val)
 
         self.assertEqual(actualResult, expectedResult)
 
 if __name__ == '__main__':
     unittest.main()
-    
+

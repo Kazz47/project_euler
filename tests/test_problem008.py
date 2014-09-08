@@ -1,8 +1,8 @@
-from problems import Problem8
+from problems import Problem008
 import unittest
 
-class test_problem8(unittest.TestCase):
-    
+class test_problem008(unittest.TestCase):
+
     def setUp(self):
         self.sequence = (
             "73167176531330624919225119674426574742355349194934"
@@ -31,18 +31,19 @@ class test_problem8(unittest.TestCase):
         length = 4
         expectedResult = 5832
 
-        actualResult = Problem8.largestSeriesProduct(self.sequence, length)
+        actualResult = Problem008.largestSeriesProduct(self.sequence, length)
 
         self.assertEqual(actualResult, expectedResult)
-        
+
     def test_largestSeriesProduct_13_23514624000(self):
         length = 13
         expectedResult = 23514624000
 
-        actualResult = Problem8.largestSeriesProduct(self.sequence, length)
+        actualResult = Problem008.largestSeriesProduct(self.sequence, length)
 
         self.assertEqual(actualResult, expectedResult)
 
 
 if __name__ == '__main__':
     unittest.main()
+

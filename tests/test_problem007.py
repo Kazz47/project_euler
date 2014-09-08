@@ -1,13 +1,13 @@
-from problems import Problem7
+from problems import Problem007
 import unittest
 
-class test_problem7(unittest.TestCase):
+class test_problem007(unittest.TestCase):
 
     def test_findPrime_6_13(self):
         primeIndex = 6
         expectedResult = 13
 
-        actualResult = Problem7.findPrime(primeIndex)
+        actualResult = Problem007.findPrime(primeIndex)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -15,7 +15,7 @@ class test_problem7(unittest.TestCase):
         primeIndex = 1
         expectedResult = 2
 
-        actualResult = Problem7.findPrime(primeIndex)
+        actualResult = Problem007.findPrime(primeIndex)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -23,10 +23,11 @@ class test_problem7(unittest.TestCase):
         primeIndex = 10001
         expectedResult = 104743
 
-        actualResult = Problem7.findPrime(primeIndex)
+        actualResult = Problem007.findPrime(primeIndex)
 
         self.assertEqual(actualResult, expectedResult)
 
 
 if __name__ == '__main__':
     unittest.main()
+

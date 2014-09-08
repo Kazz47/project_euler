@@ -1,13 +1,13 @@
-from problems import Problem6
+from problems import Problem006
 import unittest
 
-class test_problem6(unittest.TestCase):
+class test_problem006(unittest.TestCase):
 
     def test_sumOfSquares_10_385(self):
         values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         expectedResult = 385
 
-        actualResult = Problem6.sumOfSquares(values)
+        actualResult = Problem006.sumOfSquares(values)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -15,7 +15,7 @@ class test_problem6(unittest.TestCase):
         values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         expectedResult = 3025
 
-        actualResult = Problem6.squareOfSums(values)
+        actualResult = Problem006.squareOfSums(values)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -23,7 +23,7 @@ class test_problem6(unittest.TestCase):
         values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         expectedResult = 2640
 
-        actualResult = Problem6.sumDifference(values)
+        actualResult = Problem006.sumDifference(values)
 
         self.assertEqual(actualResult, expectedResult)
 
@@ -31,10 +31,11 @@ class test_problem6(unittest.TestCase):
         values = list(range(1, 101))
         expectedResult = 25164150
 
-        actualResult = Problem6.sumDifference(values)
+        actualResult = Problem006.sumDifference(values)
 
         self.assertEqual(actualResult, expectedResult)
 
 
 if __name__ == '__main__':
     unittest.main()
+

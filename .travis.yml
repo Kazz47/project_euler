@@ -8,3 +8,4 @@ python:
  - "3.2"
 
 script: python -m unittest discover
+

@@ -1,4 +1,4 @@
-from problems import Problem3
+from problems import Problem003
 
 def equalList(values):
     for x in values:
@@ -24,7 +24,7 @@ def smallestMultipleFactors(values):
     factorList = []
     factorCount = []
     for x in values:
-        factors = Problem3.factor(x)
+        factors = Problem003.factor(x)
         for y in factors:
             if (y not in factorList):
                 factorList.append(y)
@@ -35,7 +35,7 @@ def smallestMultipleFactors(values):
                 oldCount = factorCount[index]
                 if (newCount > oldCount):
                     factorCount[index] = newCount
-    
+
     result = 1
     for i in range(0, len(factorList)):
         result *= pow(factorList[i], factorCount[i])
