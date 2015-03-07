@@ -19,6 +19,7 @@ class test_problem015(unittest.TestCase):
         actualValue = Problem015.numberPaths(x, y)
         self.assertEqual(expectedValue, actualValue)
 
+'''
     def test_numberPaths_1000_1000(self):
         x = 1000
         y = 1000
@@ -26,6 +27,7 @@ class test_problem015(unittest.TestCase):
 
         actualValue = Problem015.numberPaths(x, y)
         self.assertEqual(expectedValue, actualValue)
+'''
 
 if __name__ == '__main__':
     unittest.main()
