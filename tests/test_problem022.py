@@ -36,7 +36,5 @@ class test_problem022(unittest.TestCase):
         scorer = NameScorer()
         self.assertEqual(expectedScore, scorer.scoreFile(filePath))
 
-
-
 if __name__ == '__main__':
     unittest.main()

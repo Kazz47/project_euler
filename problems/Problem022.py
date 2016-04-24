@@ -28,7 +28,6 @@ class NameScorer:
             print("File " + filePath + " could not be opened.")
         return score
 
-
 if __name__ == '__main__':
     print("[Begin]")
     print("Total File Score:", scoreFile("names.txt"))
