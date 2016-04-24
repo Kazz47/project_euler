@@ -1,9 +1,23 @@
+import math
 
 class PermutationFinder:
     def __init__(self, permList = []):
         self.permList = permList
 
-    def getFactoradic(self, number):
+    def find(self, index):
+        numPerms = math.factorial(len(self.permList))
+        if index > numPerms:
+            raise ValueError("List only has " + str(numPerms) + " permutations.")
+
+        listCopy = list(self.permList);
+        result = []
+        for x in self.getFactoradic(index-1):
+            result.append(listCopy[x])
+            listCopy.pop(x)
+        return result
+
+    @staticmethod
+    def getFactoradic(number):
         factoradic = []
         index = 1
         while number != 0:
@@ -12,13 +26,6 @@ class PermutationFinder:
             number = number // index
             index = index + 1
         return factoradic
-
-    def find(self, index):
-        result = []
-        for x in self.getFactoradic(index-1):
-            result.append(self.permList[x])
-            self.permList.pop(x)
-        return result
 
 if __name__ == '__main__':
     print("[Begin]")
